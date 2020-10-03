@@ -29,3 +29,7 @@ def generateEmptyField():
 '''
     dont forget to set seed on currrent time if needed before random
 '''
+
+#test function to see matrix
+def printField():
+    print(np.matrix(field))
