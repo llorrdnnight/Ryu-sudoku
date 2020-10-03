@@ -20,9 +20,12 @@ def generateEmptyField():
     Alternative generation method makes matrix filled with 0 based on pumpy library
     np.zeros(width,height)
     '''
+    '''
+    found a more optimized way old:
     field = [[None]*width for i in range(height)]
-
+    '''
+    field = [[None]*width dor _ in range(height)]
 # fill the field with random numbers
 '''
-    dont forget to set seed on currrent time before random
+    dont forget to set seed on currrent time if needed before random
 '''
