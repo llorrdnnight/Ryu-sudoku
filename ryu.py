@@ -21,10 +21,10 @@ def generateEmptyField():
     np.zeros(width,height)
     '''
     '''
-    found a more optimized way old:
+    found a more optimized way | old way:
     field = [[None]*width for i in range(height)]
     '''
-    field = [[None]*width or _ in range(height)]
+    field = [[None]*width for _ in range(height)]
     for i in range(height):
         for j in range(width):
             field[i][j] = j
