@@ -24,12 +24,20 @@ def generateEmptyField():
     found a more optimized way old:
     field = [[None]*width for i in range(height)]
     '''
-    field = [[None]*width dor _ in range(height)]
-# fill the field with random numbers
-'''
-    dont forget to set seed on currrent time if needed before random
-'''
+    field = [[None]*width or _ in range(height)]
+    for i in range(height):
+        for j in range(width):
+            field[i][j] = j
+
+
 
 #test function to see matrix
 def printField():
     print(np.matrix(field))
+
+
+'''
+    The "Main" state
+'''
+generateEmptyField()
+printField()
